@@ -166,8 +166,9 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/Release/tracking.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/Release/tracking.pdb</ProgramDataBaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+      <ProgramDataBaseFile>../Release/tracking.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
