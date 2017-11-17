@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{572AD544-0546-3FDA-A536-086B64C8D44F}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ToiletAR2Service</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\EPFLWork\chilitags.64bit.VS2015.build\samples\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tracking.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tracking</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Research\Serious Games\ToiletAR2CVService\Release</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Intermediate\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ToiletAR2CVService</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\EPFLWork\chilitags.64bit.VS2015.build\samples\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tracking.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tracking</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\EPFLWork\chilitags.64bit.VS2015.build\samples\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tracking.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tracking</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\EPFLWork\chilitags.64bit.VS2015.build\src\Release\chilitags_static.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_videostab249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ts249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_superres249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_stitching249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_contrib249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_nonfree249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ocl249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_gpu249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_photo249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_objdetect249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_legacy249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_video249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ml249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_calib3d249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_features2d249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_highgui249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_imgproc249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_flann249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_core249d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/Debug/tracking.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/Debug/tracking.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.3.2.64bit.VS2015.build;F:\EPFLWork\opencv3.2.0.source\include;F:\EPFLWork\opencv3.2.0.source\include\opencv;F:\EPFLWork\opencv3.2.0.source\modules\core\include;F:\EPFLWork\opencv3.2.0.source\modules\flann\include;F:\EPFLWork\opencv3.2.0.source\modules\imgproc\include;F:\EPFLWork\opencv3.2.0.source\modules\ml\include;F:\EPFLWork\opencv3.2.0.source\modules\photo\include;F:\EPFLWork\opencv3.2.0.source\modules\video\include;F:\EPFLWork\opencv3.2.0.source\modules\imgcodecs\include;F:\EPFLWork\opencv3.2.0.source\modules\shape\include;F:\EPFLWork\opencv3.2.0.source\modules\videoio\include;F:\EPFLWork\opencv3.2.0.source\modules\highgui\include;F:\EPFLWork\opencv3.2.0.source\modules\objdetect\include;F:\EPFLWork\opencv3.2.0.source\modules\superres\include;F:\EPFLWork\opencv3.2.0.source\modules\ts\include;F:\EPFLWork\opencv3.2.0.source\modules\features2d\include;F:\EPFLWork\opencv3.2.0.source\modules\calib3d\include;F:\EPFLWork\opencv3.2.0.source\modules\stitching\include;F:\EPFLWork\opencv3.2.0.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\EPFLWork\chilitags.ocv3.2.64bit.VS2015.build\src\Release\chilitags.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_shape320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_stitching320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_superres320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_videostab320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_objdetect320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_calib3d320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_features2d320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_flann320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_highgui320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_ml320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_photo320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_video320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_videoio320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_imgcodecs320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_imgproc320.lib;F:\EPFLWork\opencv.3.2.64bit.VS2015.build\lib\Release\opencv_core320.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/Release/tracking.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/Release/tracking.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\MinSizeRel\chilitags.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_videostab249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ts249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_superres249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_stitching249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_contrib249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_nonfree249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ocl249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_gpu249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_photo249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_objdetect249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_legacy249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_video249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ml249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_calib3d249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_features2d249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_highgui249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_imgproc249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_flann249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_core249d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/MinSizeRel/tracking.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/MinSizeRel/tracking.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\EPFLWork\opencv.64bit.VS2015.build;F:\EPFLWork\opencv2.4.9.source\include;F:\EPFLWork\opencv2.4.9.source\include\opencv;F:\EPFLWork\opencv2.4.9.source\modules\core\include;F:\EPFLWork\opencv2.4.9.source\modules\flann\include;F:\EPFLWork\opencv2.4.9.source\modules\imgproc\include;F:\EPFLWork\opencv2.4.9.source\modules\highgui\include;F:\EPFLWork\opencv2.4.9.source\modules\features2d\include;F:\EPFLWork\opencv2.4.9.source\modules\calib3d\include;F:\EPFLWork\opencv2.4.9.source\modules\ml\include;F:\EPFLWork\opencv2.4.9.source\modules\video\include;F:\EPFLWork\opencv2.4.9.source\modules\legacy\include;F:\EPFLWork\opencv2.4.9.source\modules\objdetect\include;F:\EPFLWork\opencv2.4.9.source\modules\photo\include;F:\EPFLWork\opencv2.4.9.source\modules\gpu\include;F:\EPFLWork\opencv2.4.9.source\modules\ocl\include;F:\EPFLWork\opencv2.4.9.source\modules\nonfree\include;F:\EPFLWork\opencv2.4.9.source\modules\contrib\include;F:\EPFLWork\opencv2.4.9.source\modules\stitching\include;F:\EPFLWork\opencv2.4.9.source\modules\superres\include;F:\EPFLWork\opencv2.4.9.source\modules\ts\include;F:\EPFLWork\opencv2.4.9.source\modules\videostab\include;F:\EPFLWork\chilitags-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\RelWithDebInfo\chilitags.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_videostab249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ts249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_superres249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_stitching249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_contrib249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_nonfree249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ocl249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_gpu249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_photo249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_objdetect249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_legacy249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_video249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_ml249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_calib3d249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_features2d249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_highgui249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_imgproc249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_flann249d.lib;F:\EPFLWork\opencv.64bit.VS2015.build\lib\Debug\opencv_core249d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/RelWithDebInfo/tracking.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/EPFLWork/chilitags.64bit.VS2015.build/samples/RelWithDebInfo/tracking.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Source.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
