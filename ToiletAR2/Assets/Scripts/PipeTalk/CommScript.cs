@@ -26,7 +26,7 @@ public class CommScript : MonoBehaviour
         PipeWriteServer.Start();
         //PipeReadServer2.Start();
         //call chilitags app here
-        System.Diagnostics.Process.Start(@"..\ToiletAR2CVService\Release\ToiletAR2CVService.exe");
+        //System.Diagnostics.Process.Start(@"..\ToiletAR2CVService\Release\ToiletAR2CVService.exe");
 	}
 	
 	// Update is called once per frame
