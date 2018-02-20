@@ -194,7 +194,7 @@ public class GameCommPipeServer : MonoBehaviour
                     int centerX = int.Parse(splitMsg[3]);
                     int centerY = int.Parse(splitMsg[4]);
                     int size = int.Parse(splitMsg[5]);
-                    GameControllerScript.getTagInfo(new tagInfo(tagid, angle, centerX, centerY, size));
+                    GameControllerScript.setTagInfo(new tagInfo(tagid, angle, centerX, centerY, size));
                     //gameController.SendMessage("getTagInfo", new tagInfo(tagid, angle, centerX, centerY, size));
 
                     /*if (PythonTest.chiliCodeToPyCodeMapping.ContainsKey(tagid))

@@ -312,7 +312,7 @@ public class GameControllerScript : MonoBehaviour
         }
     }
 
-    public static void getTagInfo(tagInfo t)
+    public static void setTagInfo(tagInfo t)
     {
         if (tags.ContainsKey(t.tagid))
         {
