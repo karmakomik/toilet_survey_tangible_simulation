@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
 	//trackedChilitags.setFilter(0, 0.);
 
 	cv::namedWindow("DisplayChilitags");
-	cv::namedWindow("Warped");
+	//cv::namedWindow("Warped");
 
 	std::map<int, chilitags::Quad> warpedImDetectedTags;
 	//cv::namedWindow("Text Subregion");
